@@ -1,7 +1,7 @@
 module.exports = {
   ci: {
     collect: {
-      chromePath: 'C:/Users/king.y/AppData/Local/Google/Chrome/Application/chrome',
+      chromePath: '{{chromePath}}',
       url: {{urls}},
       numberOfRuns: 1,
       headful: false,
@@ -9,7 +9,7 @@ module.exports = {
       puppeteerLaunchOptions: {
         defaultViewport: null, 
         args:["--disable-gpu --window-size=1920,1080", "--no-sandbox"], 
-        executablePath: 'C:/Users/king.y/AppData/Local/Google/Chrome/Application/chrome',
+        executablePath: '{{chromePath}}',
         headless: false
       },
       settings: {
